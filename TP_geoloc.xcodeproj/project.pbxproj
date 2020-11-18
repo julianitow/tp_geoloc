@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DE403E125656DA100DB3A2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE403E025656DA100DB3A2F /* AppDelegate.swift */; };
+		4DE403E325656DA100DB3A2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE403E225656DA100DB3A2F /* SceneDelegate.swift */; };
+		4DE403E525656DA100DB3A2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE403E425656DA100DB3A2F /* ViewController.swift */; };
+		4DE403E825656DA100DB3A2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE403E625656DA100DB3A2F /* Main.storyboard */; };
+		4DE403EA25656DA300DB3A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE403E925656DA300DB3A2F /* Assets.xcassets */; };
+		4DE403ED25656DA300DB3A2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE403EB25656DA300DB3A2F /* LaunchScreen.storyboard */; };
+		4DE403F825656DA300DB3A2F /* TP_geolocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE403F725656DA300DB3A2F /* TP_geolocTests.swift */; };
+		4DE4040325656DA300DB3A2F /* TP_geolocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE4040225656DA300DB3A2F /* TP_geolocUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DE403F425656DA300DB3A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DE403D525656DA100DB3A2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DE403DC25656DA100DB3A2F;
+			remoteInfo = TP_geoloc;
+		};
+		4DE403FF25656DA300DB3A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DE403D525656DA100DB3A2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DE403DC25656DA100DB3A2F;
+			remoteInfo = TP_geoloc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4DE403DD25656DA100DB3A2F /* TP_geoloc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TP_geoloc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE403E025656DA100DB3A2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4DE403E225656DA100DB3A2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4DE403E425656DA100DB3A2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4DE403E725656DA100DB3A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4DE403E925656DA300DB3A2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DE403EC25656DA300DB3A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4DE403EE25656DA300DB3A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DE403F325656DA300DB3A2F /* TP_geolocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TP_geolocTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE403F725656DA300DB3A2F /* TP_geolocTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TP_geolocTests.swift; sourceTree = "<group>"; };
+		4DE403F925656DA300DB3A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DE403FE25656DA300DB3A2F /* TP_geolocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TP_geolocUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE4040225656DA300DB3A2F /* TP_geolocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TP_geolocUITests.swift; sourceTree = "<group>"; };
+		4DE4040425656DA300DB3A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DE403DA25656DA100DB3A2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE403F025656DA300DB3A2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE403FB25656DA300DB3A2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DE403D425656DA100DB3A2F = {
+			isa = PBXGroup;
+			children = (
+				4DE403DF25656DA100DB3A2F /* TP_geoloc */,
+				4DE403F625656DA300DB3A2F /* TP_geolocTests */,
+				4DE4040125656DA300DB3A2F /* TP_geolocUITests */,
+				4DE403DE25656DA100DB3A2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DE403DE25656DA100DB3A2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DE403DD25656DA100DB3A2F /* TP_geoloc.app */,
+				4DE403F325656DA300DB3A2F /* TP_geolocTests.xctest */,
+				4DE403FE25656DA300DB3A2F /* TP_geolocUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DE403DF25656DA100DB3A2F /* TP_geoloc */ = {
+			isa = PBXGroup;
+			children = (
+				4DE403E025656DA100DB3A2F /* AppDelegate.swift */,
+				4DE403E225656DA100DB3A2F /* SceneDelegate.swift */,
+				4DE403E425656DA100DB3A2F /* ViewController.swift */,
+				4DE403E625656DA100DB3A2F /* Main.storyboard */,
+				4DE403E925656DA300DB3A2F /* Assets.xcassets */,
+				4DE403EB25656DA300DB3A2F /* LaunchScreen.storyboard */,
+				4DE403EE25656DA300DB3A2F /* Info.plist */,
+			);
+			path = TP_geoloc;
+			sourceTree = "<group>";
+		};
+		4DE403F625656DA300DB3A2F /* TP_geolocTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DE403F725656DA300DB3A2F /* TP_geolocTests.swift */,
+				4DE403F925656DA300DB3A2F /* Info.plist */,
+			);
+			path = TP_geolocTests;
+			sourceTree = "<group>";
+		};
+		4DE4040125656DA300DB3A2F /* TP_geolocUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4DE4040225656DA300DB3A2F /* TP_geolocUITests.swift */,
+				4DE4040425656DA300DB3A2F /* Info.plist */,
+			);
+			path = TP_geolocUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DE403DC25656DA100DB3A2F /* TP_geoloc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DE4040725656DA300DB3A2F /* Build configuration list for PBXNativeTarget "TP_geoloc" */;
+			buildPhases = (
+				4DE403D925656DA100DB3A2F /* Sources */,
+				4DE403DA25656DA100DB3A2F /* Frameworks */,
+				4DE403DB25656DA100DB3A2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TP_geoloc;
+			productName = TP_geoloc;
+			productReference = 4DE403DD25656DA100DB3A2F /* TP_geoloc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DE403F225656DA300DB3A2F /* TP_geolocTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DE4040A25656DA300DB3A2F /* Build configuration list for PBXNativeTarget "TP_geolocTests" */;
+			buildPhases = (
+				4DE403EF25656DA300DB3A2F /* Sources */,
+				4DE403F025656DA300DB3A2F /* Frameworks */,
+				4DE403F125656DA300DB3A2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DE403F525656DA300DB3A2F /* PBXTargetDependency */,
+			);
+			name = TP_geolocTests;
+			productName = TP_geolocTests;
+			productReference = 4DE403F325656DA300DB3A2F /* TP_geolocTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4DE403FD25656DA300DB3A2F /* TP_geolocUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DE4040D25656DA300DB3A2F /* Build configuration list for PBXNativeTarget "TP_geolocUITests" */;
+			buildPhases = (
+				4DE403FA25656DA300DB3A2F /* Sources */,
+				4DE403FB25656DA300DB3A2F /* Frameworks */,
+				4DE403FC25656DA300DB3A2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DE4040025656DA300DB3A2F /* PBXTargetDependency */,
+			);
+			name = TP_geolocUITests;
+			productName = TP_geolocUITests;
+			productReference = 4DE403FE25656DA300DB3A2F /* TP_geolocUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DE403D525656DA100DB3A2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					4DE403DC25656DA100DB3A2F = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					4DE403F225656DA300DB3A2F = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 4DE403DC25656DA100DB3A2F;
+					};
+					4DE403FD25656DA300DB3A2F = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 4DE403DC25656DA100DB3A2F;
+					};
+				};
+			};
+			buildConfigurationList = 4DE403D825656DA100DB3A2F /* Build configuration list for PBXProject "TP_geoloc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DE403D425656DA100DB3A2F;
+			productRefGroup = 4DE403DE25656DA100DB3A2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DE403DC25656DA100DB3A2F /* TP_geoloc */,
+				4DE403F225656DA300DB3A2F /* TP_geolocTests */,
+				4DE403FD25656DA300DB3A2F /* TP_geolocUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DE403DB25656DA100DB3A2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE403ED25656DA300DB3A2F /* LaunchScreen.storyboard in Resources */,
+				4DE403EA25656DA300DB3A2F /* Assets.xcassets in Resources */,
+				4DE403E825656DA100DB3A2F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE403F125656DA300DB3A2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE403FC25656DA300DB3A2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DE403D925656DA100DB3A2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE403E525656DA100DB3A2F /* ViewController.swift in Sources */,
+				4DE403E125656DA100DB3A2F /* AppDelegate.swift in Sources */,
+				4DE403E325656DA100DB3A2F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE403EF25656DA300DB3A2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE403F825656DA300DB3A2F /* TP_geolocTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE403FA25656DA300DB3A2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE4040325656DA300DB3A2F /* TP_geolocUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DE403F525656DA300DB3A2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DE403DC25656DA100DB3A2F /* TP_geoloc */;
+			targetProxy = 4DE403F425656DA300DB3A2F /* PBXContainerItemProxy */;
+		};
+		4DE4040025656DA300DB3A2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DE403DC25656DA100DB3A2F /* TP_geoloc */;
+			targetProxy = 4DE403FF25656DA300DB3A2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4DE403E625656DA100DB3A2F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DE403E725656DA100DB3A2F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4DE403EB25656DA300DB3A2F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DE403EC25656DA300DB3A2F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DE4040525656DA300DB3A2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4DE4040625656DA300DB3A2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DE4040825656DA300DB3A2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y746A2BHG;
+				INFOPLIST_FILE = TP_geoloc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.julienguillan.TP-geoloc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DE4040925656DA300DB3A2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y746A2BHG;
+				INFOPLIST_FILE = TP_geoloc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.julienguillan.TP-geoloc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4DE4040B25656DA300DB3A2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y746A2BHG;
+				INFOPLIST_FILE = TP_geolocTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.julienguillan.TP-geolocTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TP_geoloc.app/TP_geoloc";
+			};
+			name = Debug;
+		};
+		4DE4040C25656DA300DB3A2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y746A2BHG;
+				INFOPLIST_FILE = TP_geolocTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.julienguillan.TP-geolocTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TP_geoloc.app/TP_geoloc";
+			};
+			name = Release;
+		};
+		4DE4040E25656DA300DB3A2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y746A2BHG;
+				INFOPLIST_FILE = TP_geolocUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.julienguillan.TP-geolocUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TP_geoloc;
+			};
+			name = Debug;
+		};
+		4DE4040F25656DA300DB3A2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y746A2BHG;
+				INFOPLIST_FILE = TP_geolocUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.julienguillan.TP-geolocUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TP_geoloc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DE403D825656DA100DB3A2F /* Build configuration list for PBXProject "TP_geoloc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE4040525656DA300DB3A2F /* Debug */,
+				4DE4040625656DA300DB3A2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DE4040725656DA300DB3A2F /* Build configuration list for PBXNativeTarget "TP_geoloc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE4040825656DA300DB3A2F /* Debug */,
+				4DE4040925656DA300DB3A2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DE4040A25656DA300DB3A2F /* Build configuration list for PBXNativeTarget "TP_geolocTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE4040B25656DA300DB3A2F /* Debug */,
+				4DE4040C25656DA300DB3A2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DE4040D25656DA300DB3A2F /* Build configuration list for PBXNativeTarget "TP_geolocUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE4040E25656DA300DB3A2F /* Debug */,
+				4DE4040F25656DA300DB3A2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DE403D525656DA100DB3A2F /* Project object */;
+}
