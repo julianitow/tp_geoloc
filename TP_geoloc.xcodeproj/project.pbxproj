@@ -19,6 +19,9 @@
 		4DE404322565719200DB3A2F /* StoreFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE404312565719200DB3A2F /* StoreFactory.swift */; };
 		4DE4043A256572A500DB3A2F /* GraphicCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE40439256572A500DB3A2F /* GraphicCard.swift */; };
 		4DE4043F25657A9000DB3A2F /* ProductFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE4043E25657A9000DB3A2F /* ProductFactory.swift */; };
+		4DE404552568066300DB3A2F /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE404532568066300DB3A2F /* ProductTableViewCell.swift */; };
+		4DE404562568066300DB3A2F /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DE404542568066300DB3A2F /* ProductTableViewCell.xib */; };
+		4DE4045E25681B7B00DB3A2F /* ImageWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE4045D25681B7B00DB3A2F /* ImageWebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		4DE404312565719200DB3A2F /* StoreFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreFactory.swift; sourceTree = "<group>"; };
 		4DE40439256572A500DB3A2F /* GraphicCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicCard.swift; sourceTree = "<group>"; };
 		4DE4043E25657A9000DB3A2F /* ProductFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFactory.swift; sourceTree = "<group>"; };
+		4DE404532568066300DB3A2F /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		4DE404542568066300DB3A2F /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		4DE4045D25681B7B00DB3A2F /* ImageWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		4DE403DF25656DA100DB3A2F /* TP_geoloc */ = {
 			isa = PBXGroup;
 			children = (
+				4DE404522568064E00DB3A2F /* Cell */,
 				4DE404302565718300DB3A2F /* Factory */,
 				4DE4042225656F8600DB3A2F /* WebService */,
 				4DE4042125656F4F00DB3A2F /* Model */,
@@ -159,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				4DE4042325656FA700DB3A2F /* StoreWebService.swift */,
+				4DE4045D25681B7B00DB3A2F /* ImageWebService.swift */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -170,6 +178,15 @@
 				4DE4043E25657A9000DB3A2F /* ProductFactory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		4DE404522568064E00DB3A2F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4DE404532568066300DB3A2F /* ProductTableViewCell.swift */,
+				4DE404542568066300DB3A2F /* ProductTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DE403ED25656DA300DB3A2F /* LaunchScreen.storyboard in Resources */,
+				4DE404562568066300DB3A2F /* ProductTableViewCell.xib in Resources */,
 				4DE403EA25656DA300DB3A2F /* Assets.xcassets in Resources */,
 				4DE4041C25656E5F00DB3A2F /* HomeViewController.xib in Resources */,
 			);
@@ -303,6 +321,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DE4043A256572A500DB3A2F /* GraphicCard.swift in Sources */,
+				4DE404552568066300DB3A2F /* ProductTableViewCell.swift in Sources */,
+				4DE4045E25681B7B00DB3A2F /* ImageWebService.swift in Sources */,
 				4DE4043F25657A9000DB3A2F /* ProductFactory.swift in Sources */,
 				4DE403E125656DA100DB3A2F /* AppDelegate.swift in Sources */,
 				4DE404322565719200DB3A2F /* StoreFactory.swift in Sources */,
