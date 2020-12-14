@@ -13,15 +13,20 @@ class HomeViewController: UIViewController {
     @IBOutlet var mapView: MKMapView!
     
     var annotations: [MKPointAnnotation] = []
+    var defaultAnnotations: [MKPointAnnotation] = []
     var stores: [Store] = []
     var locationManager: CLLocationManager?
     var products: [GraphicCard]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UserDefaults.standard.set(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
+        self.searchBar.delegate = self
         self.mapView.delegate = self
         self.mapView.addSubview(searchBar)
         self.products = []
+        
+        self.searchBar.placeholder = "Search store"
         
         if CLLocationManager.locationServicesEnabled(){
             let locationManager = CLLocationManager()
@@ -35,7 +40,7 @@ class HomeViewController: UIViewController {
         sws.getStores { (stores) in
             for store in stores {
                 self.stores.append(store)
-                self.setAnnotations(store: store)
+                self.setAnnotations(store: store, def: true)
             }
             self.mapView.addAnnotations(self.annotations)
             self.mapView.showAnnotations(self.mapView.annotations, animated: true)
@@ -43,18 +48,33 @@ class HomeViewController: UIViewController {
         }
     }
     
-    func setAnnotations(store: Store) {
+    func setAnnotations(store: Store, def: Bool = false) {
         let annot = MKPointAnnotation()
         annot.title = store.name
         annot.coordinate = CLLocationCoordinate2D(latitude: store.coordinates.coordinate.latitude, longitude: store.coordinates.coordinate.longitude)
         self.annotations.append(annot)
+        if def{
+            self.defaultAnnotations.append(annot)
+        }
+    }
+    
+    func clearMapView() {
+        for annotation in self.annotations {
+            self.mapView.removeAnnotation(annotation)
+        }
+        self.annotations.removeAll()
+        self.stores.removeAll()
+    }
+    
+    func restoreMap(){
+        self.mapView.addAnnotations(self.defaultAnnotations)
+        self.mapView.showAnnotations(self.mapView.annotations, animated: true)
     }
     
     func detailsView(annotation: MKAnnotation) -> UIView? {
         guard let title = annotation.title else {
             return nil
         }
-        self.loadProducts(storeName: title!)
         
         let detailsView = UIView()
         let widthConstraint = NSLayoutConstraint(item: detailsView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 0.75, constant: self.view.bounds.width)
@@ -65,6 +85,7 @@ class HomeViewController: UIViewController {
         
         
         let productTableView = self.initTableView()
+        self.loadProducts(storeName: title!, tableView: productTableView)
         
         detailsView.addSubview(productTableView)
         productTableView.translatesAutoresizingMaskIntoConstraints = false
@@ -76,7 +97,7 @@ class HomeViewController: UIViewController {
         return detailsView
     }
     
-    func loadProducts(storeName: String) {
+    func loadProducts(storeName: String, tableView: UITableView?) {
         var currentStore: Store!
         for store in self.stores {
             if store.name == storeName {
@@ -87,6 +108,9 @@ class HomeViewController: UIViewController {
             return
         }
         self.products = currentStore.products
+        if tableView != nil{
+            tableView!.reloadData()
+        }
     }
     
     func initTableView() -> UITableView{
@@ -98,16 +122,6 @@ class HomeViewController: UIViewController {
         tableView.estimatedRowHeight = 44.0;
         return tableView
     }
-    
-    func getImage(url: String) -> UIImage? {
-        var image: UIImage!
-        let iws = ImageWebService()
-        iws.getImage(url: url) { (bytes) in
-            image = UIImage(data: bytes)
-        }
-        return image
-    }
-
 }
 
 extension HomeViewController: MKMapViewDelegate, CLLocationManagerDelegate, UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate {
@@ -139,7 +153,7 @@ extension HomeViewController: MKMapViewDelegate, CLLocationManagerDelegate, UISe
         guard let title = view.annotation?.title else {
             return
         }
-        self.loadProducts(storeName: title!)
+        self.loadProducts(storeName: title!, tableView: nil)
     }
     
     //TABLE VIEW
@@ -147,11 +161,51 @@ extension HomeViewController: MKMapViewDelegate, CLLocationManagerDelegate, UISe
         return self.products.count
     }
     
+    func setImage(url: String, cell: UITableViewCell) {
+        var image: UIImage!
+        let iws = ImageWebService()
+        iws.getImage(url: url) { (bytes) in
+            image = UIImage(data: bytes)
+            cell.imageView?.image = image;
+        }
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath) as! ProductTableViewCell
         cell.nameLabel.text = self.products[indexPath.row].name
-        let image = self.getImage(url: self.products[indexPath.row].image)
-        print(image)
+        self.setImage(url: self.products[indexPath.row].image, cell: cell)
+        
         return cell
+    }
+    
+    //SEARCHBAR
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let searchVal = searchBar.text else {
+            return
+        }
+        DispatchQueue.main.async {
+            self.clearMapView()
+        }
+        let sws = StoreWebService()
+        sws.searchStore(searchValue: searchVal, completion: { (stores) in
+            for store in stores {
+                self.stores.append(store)
+                self.setAnnotations(store: store)
+            }
+            if(self.stores.isEmpty){
+                self.restoreMap()
+            }
+            self.mapView.addAnnotations(self.annotations)
+            self.mapView.showAnnotations(self.mapView.annotations, animated: true)
+        })
+        self.view.endEditing(true)
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print("text changed")
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        //self.restoreMap()
     }
 }

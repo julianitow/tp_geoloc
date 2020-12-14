@@ -46,58 +46,10 @@
             filePath = "TP_geoloc/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
             landmarkName = "mapView(_:didSelect:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C8E1D6FA-6DC6-4FEF-8A8B-DF1D11B936C3"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TP_geoloc/HomeViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "getImage(url:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "C8E1D6FA-6DC6-4FEF-8A8B-DF1D11B936C3 - fa706568d038f4d6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TP_geoloc.HomeViewController.getImage(url: Swift.String) -&gt; __C.UIImage"
-                  moduleName = "TP_geoloc"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/julienguillan/PROJECTS/ESGI/S1/iOS/TP_geoloc/TP_geoloc/HomeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "105"
-                  endingLineNumber = "105"
-                  offsetFromSymbolStart = "204">
-               </Location>
-               <Location
-                  uuid = "C8E1D6FA-6DC6-4FEF-8A8B-DF1D11B936C3 - fb6e681293cd1306"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Foundation.Data) -&gt; () in TP_geoloc.HomeViewController.getImage(url: Swift.String) -&gt; __C.UIImage"
-                  moduleName = "TP_geoloc"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/julienguillan/PROJECTS/ESGI/S1/iOS/TP_geoloc/TP_geoloc/HomeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "103"
-                  endingLineNumber = "103"
-                  offsetFromSymbolStart = "36">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

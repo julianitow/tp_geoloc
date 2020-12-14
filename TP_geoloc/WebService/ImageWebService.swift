@@ -16,7 +16,6 @@ class ImageWebService {
             guard let bytes = data, err == nil else {
                 return
             }
-            print(bytes)
             DispatchQueue.main.sync {
                 completion(bytes)
             }

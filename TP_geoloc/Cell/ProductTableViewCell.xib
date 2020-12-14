@@ -24,14 +24,19 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n1h-B3-2Qg">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n1h-B3-2Qg">
                         <rect key="frame" x="16" y="10" width="115" height="80"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="115" id="9i5-Ar-zJT"/>
+                        </constraints>
                     </imageView>
                 </subviews>
                 <color key="backgroundColor" systemColor="linkColor"/>
                 <constraints>
                     <constraint firstItem="gaL-jJ-gor" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="729-2v-SJi"/>
+                    <constraint firstItem="n1h-B3-2Qg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Kdn-X5-kKf"/>
+                    <constraint firstAttribute="bottom" secondItem="n1h-B3-2Qg" secondAttribute="bottom" constant="11" id="Pej-Jp-N6Z"/>
+                    <constraint firstItem="n1h-B3-2Qg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="oxK-3h-vZ4"/>
                     <constraint firstAttribute="bottom" secondItem="gaL-jJ-gor" secondAttribute="bottom" constant="10" id="xWi-fE-fl7"/>
                     <constraint firstItem="gaL-jJ-gor" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="zoj-pf-BZl"/>
                 </constraints>
